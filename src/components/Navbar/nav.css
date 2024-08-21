@@ -94,3 +94,35 @@ nav{
     width: 50px;
     border-radius: 50%;
 }
+@media (max-width:900px){
+  .menu-icon{
+    display: none;
+  }
+  .nav-right img{
+    display: none;
+  }
+   .user-icon{
+    /* display: block; */
+    margin-right: 15px;
+    width: 30px;
+    /* padding-right: 10px; */
+  }
+  .logo{width: 90px;
+  padding-left: 10px;}
+
+  .search-container:hover .search-input {
+    height: 32px;
+    width: 100px;
+    opacity: 1;
+  }
+  
+  .search-button{
+    /* margin-left: 10px; */
+    width: 30px;
+    height: 30px;
+  }
+  nav{
+    padding-bottom: 3px;
+  }
+
+}
