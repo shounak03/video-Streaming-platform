@@ -5,17 +5,17 @@ import { value_conv, YT_API_KEY } from '../../data'
 import { Link, useParams } from 'react-router-dom'
 
 
-const Recommend = ({categoryId}) => {
+const Recommend = () => {
 
-    // const {categoryId} = useParams();
+
     
     const [apiData,setApiData] = useState([]);
 
     
     const fetchData = async()=>{
 
-        // const url = `https://youtube.googleapis.com/youtube/v3/videoCategories?part=snippet&regionCode=US&key=${YT_API_KEY}`;
-        const url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&key=AIzaSyCnCJDSf8Mw_F1HSwQ7DjC9yEr72eA2qSU`
+
+        const url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&key=${YT_API_KEY}`
         await fetch(url).then(resp=>resp.json()).then(data=>setApiData(data.items));
     }
     
