@@ -1,14 +1,11 @@
 .sidebar{
-    background:  #fff;
+  background: #131842;
     width: 15%;
     position: fixed;
     height: 100vh;
     padding-top: 10px;
     padding-left: 1%;
 }
-
-    
-
 .shorcut-links img{
     width: 30px;
     margin-right: 20px;
@@ -21,6 +18,9 @@
      width: fit-content;
      flex-wrap: wrap;
      cursor: pointer;
+}
+.side-link p{
+    color: aliceblue;
 }
 .sidebar hr{
     bottom: 0;
@@ -36,9 +36,9 @@
 }
 .small-sidebar{
     width: 5%;
-    /* margin-right: 2%; */
 }
 .small-sidebar p{
+    
     width: 4%;
     display: none;
 }

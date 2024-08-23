@@ -54,7 +54,7 @@ const Sidebar = ({sidebar,category,setCategory}) => {
             </div>
 
         <div className="subscribed-list">
-            <h3 style={{ fontSize: '13px', margin: '20px 0', color: '#5a5a5a' }}>
+            <h3 style={{ fontSize: '13px', margin: '20px 0', color: 'aliceblue' }}>
                 Subscribed</h3>
             <div className="side-link">
                 <img src={jack} alt="" /><p>PewDiePie</p>
